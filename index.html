@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Corrected Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Weather Forecast Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Enter City Name">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="toggle-temp">
+                <label for="tempToggle">°C / °F:</label>
+                <input type="checkbox" id="tempToggle">
+            </div>
+        </header>
+        <main class="dashboard-main">
+            <div class="current-weather">
+                <h2 id="cityName">City Name</h2>
+                <div id="weatherIcon" class="weather-icon"></div>
+                <p id="currentTemp">Temperature: --</p>
+                <p id="weatherCondition">Condition: --</p>
+            </div>
+            <div class="forecast-chart">
+                <h3>Temperature Forecast</h3>
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </main>
+        <aside class="weather-details">
+            <h3>Details</h3>
+            <div class="details-item">
+                <i class="fas fa-tint"></i>
+                <p id="humidity">Humidity: --</p>
+            </div>
+            <div class="details-item">
+                <i class="fas fa-wind"></i>
+                <p id="windSpeed">Wind Speed: --</p>
+            </div>
+            <div class="details-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <p id="pressure">Pressure: --</p>
+            </div>
+        </aside>
+        <footer class="dashboard-footer">
+            <div class="footer-text">
+                <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+                <p>Dev by <a href="https://www.soul-dev.com" target="_blank">Soul Dev</a></p>
+            </div>
+        </footer>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
