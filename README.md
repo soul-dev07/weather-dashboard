@@ -37,7 +37,7 @@ The dashboard includes:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/weather-dashboard.git
+    git clone https://github.com/soul-dev07/weather-dashboard.git
     ```
 
 2. Open the project folder:
